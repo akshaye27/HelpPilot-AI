@@ -79,11 +79,13 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-Configure the required environment variables in your local `.env` file. Make sure the backend has access to your MongoDB Atlas database.
+Install the required Python packages:
 
-Install the Python dependencies using the dependency file included in the project.
+```powershell
+python -m pip install -r requirements.txt
+```
 
-**Security:** Never upload your `.env` file, passwords, database connection strings, or API keys to GitHub.
+Create a local `.env` file containing the required environment variables, including your MongoDB Atlas connection details. Use your own credentials; do not copy private credentials into the repository.
 
 ### Step 3: Start the backend
 
