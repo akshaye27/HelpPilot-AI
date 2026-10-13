@@ -8,7 +8,7 @@ These test scenarios cover the five required ITSM capabilities and unsupported-q
 - **Action:** Submit a new ticket through the Employee Portal.
 - **Expected Result:** A ticket is created successfully with an appropriate category, priority, and assignment group.
 - **Actual Result:** Passed. Ticket `INC1005` was created successfully and a success message was displayed.
-- **Screenshot Evidence:** `screenshots/01-ticket-intake.png`
+- **Screenshot Evidence:** ![Ticket creation](../screenshots/01-ticket-intake.png)
 
 ## Test 2 — Auto Resolution / Self-Heal
 
@@ -16,7 +16,7 @@ These test scenarios cover the five required ITSM capabilities and unsupported-q
 - **Action:** Select the self-healing option for the ticket.
 - **Expected Result:** The mock self-healing action executes successfully, the ticket is resolved when appropriate, and an audit record is stored.
 - **Actual Result:** Passed. Self-healing was executed for ticket `INC1005`. The audit trail recorded action `vpn_restart`, status `success`, and mode `mock`.
-- **Screenshot Evidence:** `screenshots/02-self-heal-audit.png`
+- **Screenshot Evidence:** ![Self-healing and audit trail](../screenshots/02-self-heal-audit.png)
 
 ## Test 3 — Knowledge Management / Retrieval-Augmented Generation (RAG)
 
@@ -24,7 +24,7 @@ These test scenarios cover the five required ITSM capabilities and unsupported-q
 - **Action:** Submit the question through the AI Analysis page.
 - **Expected Result:** Relevant knowledge is retrieved, a useful answer is generated, and the relevant knowledge source is displayed.
 - **Actual Result:** Passed. The application returned relevant VPN troubleshooting steps and displayed the source article, "VPN Connectivity Troubleshooting" (KB001), with a distance score of `0.612`.
-- **Screenshot Evidence:** `screenshots/03-rag-answer-source.png`
+- **Screenshot Evidence:** ![RAG answer and knowledge source](../screenshots/03-rag-answer-source.png)
 
 ## Test 4 — Self-Service Chatbot / Unsupported Question
 
@@ -32,7 +32,7 @@ These test scenarios cover the five required ITSM capabilities and unsupported-q
 - **Action:** Submit the question through the AI Analysis page.
 - **Expected Result:** The system avoids presenting unsupported information as fact and escalates the issue when relevant knowledge is insufficient.
 - **Actual Result:** Pending verification. This scenario must be tested before marking it as passed.
-- **Screenshot Evidence:** `screenshots/04-unsupported-question.png`
+- **Screenshot Evidence:** ![Unsupported question handling](../screenshots/04-unsupported-question.png)
 
 ## Test 5 — Software Provisioning Automation
 
@@ -40,7 +40,7 @@ These test scenarios cover the five required ITSM capabilities and unsupported-q
 - **Action:** Submit the request through the Software Requests page.
 - **Expected Result:** A software request and linked ticket are recorded, with a provisioning status and audit trail where applicable.
 - **Actual Result:** Passed. Request `SWR1003` for 7-Zip was processed in mock mode with status `Provisioned (Mock)` and linked ticket `INC1006`.
-- **Screenshot Evidence:** `screenshots/05-software-provisioning.png`
+- **Screenshot Evidence:** ![Software provisioning](../screenshots/05-software-provisioning.png)
 
 ## Screenshot Evidence
 
