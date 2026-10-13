@@ -1,0 +1,36 @@
+﻿# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache and test artefacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ChromaDB local database (rebuild from indexing script)
+backend/chroma_db/
+
+# Node dependencies and generated builds
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local backup file
+backend/main_backup.py
