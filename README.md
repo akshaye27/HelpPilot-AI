@@ -107,7 +107,7 @@ Keep this terminal running.
 Open a second terminal and run:
 
 ```powershell
-cd "$HOME\Desktop\ITSM Help Desk\frontend"
+cd frontend
 npm install
 npm run dev
 ```
